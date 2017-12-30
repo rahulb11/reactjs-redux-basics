@@ -1,0 +1,24 @@
+{
+  "name": "reactjs-redux-basics",
+  "version": "1.0.0",
+  "description": "ReactJS + Redux basics",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack -d && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline --hot --history-api-fallback",
+    "build:prod": "webpack -p && cp src/index.html dist/index.html"
+  },
+  "keywords": [
+    "reactjs",
+    "redux"
+  ],
+  "author": "Rahul Bhandari",
+  "license": "MIT",
+  "dependencies": {
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
